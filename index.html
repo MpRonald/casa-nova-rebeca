@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>🏠 CASA NOVA REBECA</title>
+  <!-- Google Fonts para um toque mais delicado -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Lato&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fff0f6;
+      font-family: 'Lato', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: #d63384;
+      margin-bottom: 40px;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      color: #d63384;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .item label {
+      flex-grow: 1;
+      cursor: pointer;
+    }
+    .ok {
+      margin-left: 10px;
+      color: green;
+      font-weight: bold;
+    }
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🏠 CASA NOVA REBECA</h1>
+    
+    <!-- Seção: SALA -->
+    <div class="section">
+      <h2>SALA</h2>
+      <div class="item">
+        <input type="checkbox" id="item1">
+        <label for="item1">Sofá</label>
+        <span class="ok" id="ok1"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item2">
+        <label for="item2">Almofadas</label>
+        <span class="ok" id="ok2"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item3" checked>
+        <label for="item3">TV (1.25cm largura)</label>
+        <span class="ok" id="ok3">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item4">
+        <label for="item4">Raque para TV</label>
+        <span class="ok" id="ok4"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item5">
+        <label for="item5">Mesa de suporte</label>
+        <span class="ok" id="ok5"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item6">
+        <label for="item6">Mesa de jantar de 4 cadeiras</label>
+        <span class="ok" id="ok6"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item7">
+        <label for="item7">Cortina da janela</label>
+        <span class="ok" id="ok7"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item8">
+        <label for="item8">Varal da cortina</label>
+        <span class="ok" id="ok8"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item9">
+        <label for="item9">Tapete</label>
+        <span class="ok" id="ok9"></span>
+      </div>
+    </div>
+    
+    <!-- Seção: COZINHA -->
+    <div class="section">
+      <h2>COZINHA</h2>
+      <div class="item">
+        <input type="checkbox" id="item10">
+        <label for="item10">Acendedor de fogão</label>
+        <span class="ok" id="ok10"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item11" checked>
+        <label for="item11">Air Fryer</label>
+        <span class="ok" id="ok11">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item12" checked>
+        <label for="item12">Armário</label>
+        <span class="ok" id="ok12">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item13">
+        <label for="item13">Assadeira para forno</label>
+        <span class="ok" id="ok13"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item14" checked>
+        <label for="item14">Cafeteira</label>
+        <span class="ok" id="ok14">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item15">
+        <label for="item15">Carrinho de mercado</label>
+        <span class="ok" id="ok15"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item16">
+        <label for="item16">Copos</label>
+        <span class="ok" id="ok16"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item17" checked>
+        <label for="item17">Descanso de mesa</label>
+        <span class="ok" id="ok17">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item18">
+        <label for="item18">Escorredor de macarrão</label>
+        <span class="ok" id="ok18"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item19">
+        <label for="item19">Escorredor de prato</label>
+        <span class="ok" id="ok19"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item20" checked>
+        <label for="item20">Espremedor de frutas</label>
+        <span class="ok" id="ok20">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item21">
+        <label for="item21">Estendal (varal)</label>
+        <span class="ok" id="ok21"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item22" checked>
+        <label for="item22">Esquentador de água</label>
+        <span class="ok" id="ok22">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item23">
+        <label for="item23">Exaustor</label>
+        <span class="ok" id="ok23"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item24">
+        <label for="item24">Frigideira (2)</label>
+        <span class="ok" id="ok24"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item25">
+        <label for="item25">Frigorífico</label>
+        <span class="ok" id="ok25"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item26">
+        <label for="item26">Fruteira</label>
+        <span class="ok" id="ok26"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item27">
+        <label for="item27">Fogão</label>
+        <span class="ok" id="ok27"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item28" checked>
+        <label for="item28">Garrafa de água de geladeira</label>
+        <span class="ok" id="ok28">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item29">
+        <label for="item29">Jarra de suco</label>
+        <span class="ok" id="ok29"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item30">
+        <label for="item30">Liquidificador</label>
+        <span class="ok" id="ok30"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item31">
+        <label for="item31">Lixeira de cozinha</label>
+        <span class="ok" id="ok31"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item32">
+        <label for="item32">Máquina de lavar roupa</label>
+        <span class="ok" id="ok32"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item33">
+        <label for="item33">Micro-ondas</label>
+        <span class="ok" id="ok33"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item34">
+        <label for="item34">Panelas</label>
+        <span class="ok" id="ok34"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item35" checked>
+        <label for="item35">Panela de pressão</label>
+        <span class="ok" id="ok35">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item36">
+        <label for="item36">Panos de cozinha</label>
+        <span class="ok" id="ok36"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item37">
+        <label for="item37">Pratos</label>
+        <span class="ok" id="ok37"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item38" checked>
+        <label for="item38">Rachette</label>
+        <span class="ok" id="ok38">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item39" checked>
+        <label for="item39">Ralador</label>
+        <span class="ok" id="ok39">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item40">
+        <label for="item40">Tábua de corte</label>
+        <span class="ok" id="ok40"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item41">
+        <label for="item41">Tábuas de descanso de mesa</label>
+        <span class="ok" id="ok41"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item42" checked>
+        <label for="item42">Talheres de cozinha (colher grande, colher furada, concha, espátula de silicone, faca de corte)</label>
+        <span class="ok" id="ok42">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item43">
+        <label for="item43">Talheres de uso (garfo, faca, colher, colher de sobremesa)</label>
+        <span class="ok" id="ok43"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item44">
+        <label for="item44">Tapete de cozinha</label>
+        <span class="ok" id="ok44"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item45" checked>
+        <label for="item45">Toalha de mesa</label>
+        <span class="ok" id="ok45">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item46" checked>
+        <label for="item46">Varinha magica</label>
+        <span class="ok" id="ok46">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item47" checked>
+        <label for="item47">Vasilhas plásticas para almoço do trabalho</label>
+        <span class="ok" id="ok47">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item48" checked>
+        <label for="item48">Vasilha para condimentos</label>
+        <span class="ok" id="ok48">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item49">
+        <label for="item49">Xícaras grandes</label>
+        <span class="ok" id="ok49"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item50" checked>
+        <label for="item50">Xícaras pequenas</label>
+        <span class="ok" id="ok50">OK</span>
+      </div>
+    </div>
+    
+    <!-- Seção: DISPENSA -->
+    <div class="section">
+      <h2>DISPENSA</h2>
+      <div class="item">
+        <input type="checkbox" id="item51">
+        <label for="item51">Armários funcionais para guardar utensílios de limpeza e diversos</label>
+        <span class="ok" id="ok51"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item52">
+        <label for="item52">Aspirador de pó</label>
+        <span class="ok" id="ok52"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item53" checked>
+        <label for="item53">Balde</label>
+        <span class="ok" id="ok53">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item54" checked>
+        <label for="item54">Cesto de roupa suja</label>
+        <span class="ok" id="ok54">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item55">
+        <label for="item55">Esfregão/Mop</label>
+        <span class="ok" id="ok55"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item56" checked>
+        <label for="item56">Ferro de passar roupa</label>
+        <span class="ok" id="ok56">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item57">
+        <label for="item57">Mesa de passar roupa</label>
+        <span class="ok" id="ok57"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item58">
+        <label for="item58">Pá de lixo</label>
+        <span class="ok" id="ok58"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item59">
+        <label for="item59">Vassoura</label>
+        <span class="ok" id="ok59"></span>
+      </div>
+    </div>
+    
+    <!-- Seção: QUARTO -->
+    <div class="section">
+      <h2>QUARTO</h2>
+      <div class="item">
+        <input type="checkbox" id="item60" checked>
+        <label for="item60">Armário</label>
+        <span class="ok" id="ok60">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item61">
+        <label for="item61">Cama de casal</label>
+        <span class="ok" id="ok61"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item62">
+        <label for="item62">Colchão de casal</label>
+        <span class="ok" id="ok62"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item63">
+        <label for="item63">Cortina da janela</label>
+        <span class="ok" id="ok63"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item64" checked>
+        <label for="item64">Edredons e colchas</label>
+        <span class="ok" id="ok64">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item65">
+        <label for="item65">Espelho</label>
+        <span class="ok" id="ok65"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item66">
+        <label for="item66">Mesa de cabeceira</label>
+        <span class="ok" id="ok66"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item67" checked>
+        <label for="item67">Roupa de cama</label>
+        <span class="ok" id="ok67">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item68" checked>
+        <label for="item68">Toalhas de banho</label>
+        <span class="ok" id="ok68">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item69" checked>
+        <label for="item69">Travesseiros</label>
+        <span class="ok" id="ok69">OK</span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item70">
+        <label for="item70">Varal da cortina</label>
+        <span class="ok" id="ok70"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item71" checked>
+        <label for="item71">Ventilador/Ventuinha</label>
+        <span class="ok" id="ok71">OK</span>
+      </div>
+    </div>
+    
+    <!-- Seção: CASA DE BANHO -->
+    <div class="section">
+      <h2>CASA DE BANHO</h2>
+      <div class="item">
+        <input type="checkbox" id="item72">
+        <label for="item72">Armário de banheiro</label>
+        <span class="ok" id="ok72"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item73">
+        <label for="item73">Cortina de banho</label>
+        <span class="ok" id="ok73"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item74">
+        <label for="item74">Espelho</label>
+        <span class="ok" id="ok74"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item75">
+        <label for="item75">Lixeira de banheiro</label>
+        <span class="ok" id="ok75"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item76">
+        <label for="item76">Porta sábado</label>
+        <span class="ok" id="ok76"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item77">
+        <label for="item77">Porta escova de dentes</label>
+        <span class="ok" id="ok77"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item78">
+        <label for="item78">Tapete</label>
+        <span class="ok" id="ok78"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item79">
+        <label for="item79">Toalha de mão</label>
+        <span class="ok" id="ok79"></span>
+      </div>
+      <div class="item">
+        <input type="checkbox" id="item80">
+        <label for="item80">Varal da cortina de banho</label>
+        <span class="ok" id="ok80"></span>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script>
+    // Seleciona todos os checkboxes e associa a exibição do "OK" ao marcar/desmarcar
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((checkbox, index) => {
+      const okSpan = document.getElementById('ok' + (index + 1));
+      // Verifica no carregamento se o checkbox já está marcado
+      if (checkbox.checked) {
+        okSpan.textContent = "OK";
+      }
+      checkbox.addEventListener('change', function() {
+        okSpan.textContent = this.checked ? "OK" : "";
+      });
+    });
+  </script>
+</body>
+</html>
