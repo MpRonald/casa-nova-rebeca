@@ -21,7 +21,7 @@
       background: #fff;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     h1 {
       text-align: center;
@@ -73,7 +73,7 @@
       cursor: pointer;
     }
     
-    /* Media Query para Smartphones */
+    /* Responsividade para Smartphones */
     @media (max-width: 600px) {
       body {
         padding: 10px;
@@ -98,12 +98,7 @@
       .ok {
         margin: 5px 0;
       }
-      .name-input {
-        width: 100%;
-        margin: 5px 0;
-        font-size: 16px;
-      }
-      .name-btn {
+      .name-input, .name-btn {
         width: 100%;
         margin: 5px 0;
         font-size: 16px;
@@ -115,7 +110,7 @@
   <div class="container">
     <h1>🏠 CASA NOVA REBECA</h1>
     
-    <!-- Seção: SALA -->
+    <!-- SALA: Itens 1 a 9 -->
     <div class="section">
       <h2>SALA</h2>
       <div class="item">
@@ -183,9 +178,10 @@
       </div>
     </div>
     
-    <!-- Seção: COZINHA -->
+    <!-- COZINHA: Itens 10 a 50 -->
     <div class="section">
       <h2>COZINHA</h2>
+      <!-- 10: Acendedor de fogão -->
       <div class="item">
         <input type="checkbox" id="item10">
         <label for="item10">Acendedor de fogão</label>
@@ -193,20 +189,23 @@
         <input type="text" id="nameInput10" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-10', 'nameInput10')">Gravar</button>
       </div>
+      <!-- 11: Air Fryer = OK -->
       <div class="item">
-        <input type="checkbox" id="item11">
+        <input type="checkbox" id="item11" checked>
         <label for="item11">Air Fryer</label>
-        <span class="ok" id="ok11"></span>
+        <span class="ok" id="ok11">OK</span>
         <input type="text" id="nameInput11" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-11', 'nameInput11')">Gravar</button>
       </div>
+      <!-- 12: Armário = OK -->
       <div class="item">
-        <input type="checkbox" id="item12">
+        <input type="checkbox" id="item12" checked>
         <label for="item12">Armário</label>
-        <span class="ok" id="ok12"></span>
+        <span class="ok" id="ok12">OK</span>
         <input type="text" id="nameInput12" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-12', 'nameInput12')">Gravar</button>
       </div>
+      <!-- 13: Assadeira para forno -->
       <div class="item">
         <input type="checkbox" id="item13">
         <label for="item13">Assadeira para forno</label>
@@ -214,13 +213,15 @@
         <input type="text" id="nameInput13" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-13', 'nameInput13')">Gravar</button>
       </div>
+      <!-- 14: Cafeteira = OK -->
       <div class="item">
-        <input type="checkbox" id="item14">
+        <input type="checkbox" id="item14" checked>
         <label for="item14">Cafeteira</label>
-        <span class="ok" id="ok14"></span>
+        <span class="ok" id="ok14">OK</span>
         <input type="text" id="nameInput14" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-14', 'nameInput14')">Gravar</button>
       </div>
+      <!-- 15: Carrinho de mercado -->
       <div class="item">
         <input type="checkbox" id="item15">
         <label for="item15">Carrinho de mercado</label>
@@ -228,6 +229,7 @@
         <input type="text" id="nameInput15" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-15', 'nameInput15')">Gravar</button>
       </div>
+      <!-- 16: Copos -->
       <div class="item">
         <input type="checkbox" id="item16">
         <label for="item16">Copos</label>
@@ -235,13 +237,15 @@
         <input type="text" id="nameInput16" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-16', 'nameInput16')">Gravar</button>
       </div>
+      <!-- 17: Descanso de mesa = OK -->
       <div class="item">
-        <input type="checkbox" id="item17">
+        <input type="checkbox" id="item17" checked>
         <label for="item17">Descanso de mesa</label>
-        <span class="ok" id="ok17"></span>
+        <span class="ok" id="ok17">OK</span>
         <input type="text" id="nameInput17" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-17', 'nameInput17')">Gravar</button>
       </div>
+      <!-- 18: Escorredor de macarrão -->
       <div class="item">
         <input type="checkbox" id="item18">
         <label for="item18">Escorredor de macarrão</label>
@@ -249,6 +253,7 @@
         <input type="text" id="nameInput18" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-18', 'nameInput18')">Gravar</button>
       </div>
+      <!-- 19: Escorredor de prato -->
       <div class="item">
         <input type="checkbox" id="item19">
         <label for="item19">Escorredor de prato</label>
@@ -256,13 +261,15 @@
         <input type="text" id="nameInput19" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-19', 'nameInput19')">Gravar</button>
       </div>
+      <!-- 20: Espremedor de frutas = OK -->
       <div class="item">
-        <input type="checkbox" id="item20">
+        <input type="checkbox" id="item20" checked>
         <label for="item20">Espremedor de frutas</label>
-        <span class="ok" id="ok20"></span>
+        <span class="ok" id="ok20">OK</span>
         <input type="text" id="nameInput20" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-20', 'nameInput20')">Gravar</button>
       </div>
+      <!-- 21: Estendal (varal) -->
       <div class="item">
         <input type="checkbox" id="item21">
         <label for="item21">Estendal (varal)</label>
@@ -270,13 +277,15 @@
         <input type="text" id="nameInput21" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-21', 'nameInput21')">Gravar</button>
       </div>
+      <!-- 22: Esquentador de água = OK -->
       <div class="item">
-        <input type="checkbox" id="item22">
+        <input type="checkbox" id="item22" checked>
         <label for="item22">Esquentador de água</label>
-        <span class="ok" id="ok22"></span>
+        <span class="ok" id="ok22">OK</span>
         <input type="text" id="nameInput22" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-22', 'nameInput22')">Gravar</button>
       </div>
+      <!-- 23: Exaustor -->
       <div class="item">
         <input type="checkbox" id="item23">
         <label for="item23">Exaustor</label>
@@ -284,6 +293,7 @@
         <input type="text" id="nameInput23" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-23', 'nameInput23')">Gravar</button>
       </div>
+      <!-- 24: Frigideira (2) -->
       <div class="item">
         <input type="checkbox" id="item24">
         <label for="item24">Frigideira (2)</label>
@@ -291,6 +301,7 @@
         <input type="text" id="nameInput24" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-24', 'nameInput24')">Gravar</button>
       </div>
+      <!-- 25: Frigorífico -->
       <div class="item">
         <input type="checkbox" id="item25">
         <label for="item25">Frigorífico</label>
@@ -298,6 +309,7 @@
         <input type="text" id="nameInput25" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-25', 'nameInput25')">Gravar</button>
       </div>
+      <!-- 26: Fruteira -->
       <div class="item">
         <input type="checkbox" id="item26">
         <label for="item26">Fruteira</label>
@@ -305,6 +317,7 @@
         <input type="text" id="nameInput26" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-26', 'nameInput26')">Gravar</button>
       </div>
+      <!-- 27: Fogão -->
       <div class="item">
         <input type="checkbox" id="item27">
         <label for="item27">Fogão</label>
@@ -312,13 +325,15 @@
         <input type="text" id="nameInput27" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-27', 'nameInput27')">Gravar</button>
       </div>
+      <!-- 28: Garrafa de água de geladeira = OK -->
       <div class="item">
-        <input type="checkbox" id="item28">
+        <input type="checkbox" id="item28" checked>
         <label for="item28">Garrafa de água de geladeira</label>
-        <span class="ok" id="ok28"></span>
+        <span class="ok" id="ok28">OK</span>
         <input type="text" id="nameInput28" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-28', 'nameInput28')">Gravar</button>
       </div>
+      <!-- 29: Jarra de suco -->
       <div class="item">
         <input type="checkbox" id="item29">
         <label for="item29">Jarra de suco</label>
@@ -326,6 +341,7 @@
         <input type="text" id="nameInput29" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-29', 'nameInput29')">Gravar</button>
       </div>
+      <!-- 30: Liquidificador -->
       <div class="item">
         <input type="checkbox" id="item30">
         <label for="item30">Liquidificador</label>
@@ -333,6 +349,7 @@
         <input type="text" id="nameInput30" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-30', 'nameInput30')">Gravar</button>
       </div>
+      <!-- 31: Lixeira de cozinha -->
       <div class="item">
         <input type="checkbox" id="item31">
         <label for="item31">Lixeira de cozinha</label>
@@ -340,6 +357,7 @@
         <input type="text" id="nameInput31" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-31', 'nameInput31')">Gravar</button>
       </div>
+      <!-- 32: Máquina de lavar roupa -->
       <div class="item">
         <input type="checkbox" id="item32">
         <label for="item32">Máquina de lavar roupa</label>
@@ -347,6 +365,7 @@
         <input type="text" id="nameInput32" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-32', 'nameInput32')">Gravar</button>
       </div>
+      <!-- 33: Micro-ondas -->
       <div class="item">
         <input type="checkbox" id="item33">
         <label for="item33">Micro-ondas</label>
@@ -354,6 +373,7 @@
         <input type="text" id="nameInput33" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-33', 'nameInput33')">Gravar</button>
       </div>
+      <!-- 34: Panelas -->
       <div class="item">
         <input type="checkbox" id="item34">
         <label for="item34">Panelas</label>
@@ -361,13 +381,15 @@
         <input type="text" id="nameInput34" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-34', 'nameInput34')">Gravar</button>
       </div>
+      <!-- 35: Panela de pressão = OK -->
       <div class="item">
-        <input type="checkbox" id="item35">
+        <input type="checkbox" id="item35" checked>
         <label for="item35">Panela de pressão</label>
-        <span class="ok" id="ok35"></span>
+        <span class="ok" id="ok35">OK</span>
         <input type="text" id="nameInput35" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-35', 'nameInput35')">Gravar</button>
       </div>
+      <!-- 36: Panos de cozinha -->
       <div class="item">
         <input type="checkbox" id="item36">
         <label for="item36">Panos de cozinha</label>
@@ -375,6 +397,7 @@
         <input type="text" id="nameInput36" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-36', 'nameInput36')">Gravar</button>
       </div>
+      <!-- 37: Pratos -->
       <div class="item">
         <input type="checkbox" id="item37">
         <label for="item37">Pratos</label>
@@ -382,20 +405,23 @@
         <input type="text" id="nameInput37" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-37', 'nameInput37')">Gravar</button>
       </div>
+      <!-- 38: Rachette = OK -->
       <div class="item">
-        <input type="checkbox" id="item38">
+        <input type="checkbox" id="item38" checked>
         <label for="item38">Rachette</label>
-        <span class="ok" id="ok38"></span>
+        <span class="ok" id="ok38">OK</span>
         <input type="text" id="nameInput38" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-38', 'nameInput38')">Gravar</button>
       </div>
+      <!-- 39: Ralador = OK -->
       <div class="item">
-        <input type="checkbox" id="item39">
+        <input type="checkbox" id="item39" checked>
         <label for="item39">Ralador</label>
-        <span class="ok" id="ok39"></span>
+        <span class="ok" id="ok39">OK</span>
         <input type="text" id="nameInput39" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-39', 'nameInput39')">Gravar</button>
       </div>
+      <!-- 40: Tábua de corte -->
       <div class="item">
         <input type="checkbox" id="item40">
         <label for="item40">Tábua de corte</label>
@@ -403,9 +429,89 @@
         <input type="text" id="nameInput40" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-40', 'nameInput40')">Gravar</button>
       </div>
+      <!-- 41: Tábuas de descanso de mesa -->
+      <div class="item">
+        <input type="checkbox" id="item41">
+        <label for="item41">Tábuas de descanso de mesa</label>
+        <span class="ok" id="ok41"></span>
+        <input type="text" id="nameInput41" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-41', 'nameInput41')">Gravar</button>
+      </div>
+      <!-- 42: Talheres de cozinha (colher grande, colher furada, concha, espátula de silicone, faca de corte) = OK -->
+      <div class="item">
+        <input type="checkbox" id="item42" checked>
+        <label for="item42">Talheres de cozinha (colher grande, colher furada, concha, espátula de silicone, faca de corte)</label>
+        <span class="ok" id="ok42">OK</span>
+        <input type="text" id="nameInput42" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-42', 'nameInput42')">Gravar</button>
+      </div>
+      <!-- 43: Talheres de uso (garfo, faca, colher, colher de sobremesa) -->
+      <div class="item">
+        <input type="checkbox" id="item43">
+        <label for="item43">Talheres de uso (garfo, faca, colher, colher de sobremesa)</label>
+        <span class="ok" id="ok43"></span>
+        <input type="text" id="nameInput43" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-43', 'nameInput43')">Gravar</button>
+      </div>
+      <!-- 44: Tapete de cozinha -->
+      <div class="item">
+        <input type="checkbox" id="item44">
+        <label for="item44">Tapete de cozinha</label>
+        <span class="ok" id="ok44"></span>
+        <input type="text" id="nameInput44" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-44', 'nameInput44')">Gravar</button>
+      </div>
+      <!-- 45: Toalha de mesa = OK -->
+      <div class="item">
+        <input type="checkbox" id="item45" checked>
+        <label for="item45">Toalha de mesa</label>
+        <span class="ok" id="ok45">OK</span>
+        <input type="text" id="nameInput45" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-45', 'nameInput45')">Gravar</button>
+      </div>
+      <!-- 46: Varinha magica = OK -->
+      <div class="item">
+        <input type="checkbox" id="item46" checked>
+        <label for="item46">Varinha magica</label>
+        <span class="ok" id="ok46">OK</span>
+        <input type="text" id="nameInput46" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-46', 'nameInput46')">Gravar</button>
+      </div>
+      <!-- 47: Vasilhas plásticas para almoço do trabalho = OK -->
+      <div class="item">
+        <input type="checkbox" id="item47" checked>
+        <label for="item47">Vasilhas plásticas para almoço do trabalho</label>
+        <span class="ok" id="ok47">OK</span>
+        <input type="text" id="nameInput47" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-47', 'nameInput47')">Gravar</button>
+      </div>
+      <!-- 48: Vasilha para condimentos = OK -->
+      <div class="item">
+        <input type="checkbox" id="item48" checked>
+        <label for="item48">Vasilha para condimentos</label>
+        <span class="ok" id="ok48">OK</span>
+        <input type="text" id="nameInput48" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-48', 'nameInput48')">Gravar</button>
+      </div>
+      <!-- 49: Xícaras grandes -->
+      <div class="item">
+        <input type="checkbox" id="item49">
+        <label for="item49">Xícaras grandes</label>
+        <span class="ok" id="ok49"></span>
+        <input type="text" id="nameInput49" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-49', 'nameInput49')">Gravar</button>
+      </div>
+      <!-- 50: Xícaras pequenas = OK -->
+      <div class="item">
+        <input type="checkbox" id="item50" checked>
+        <label for="item50">Xícaras pequenas</label>
+        <span class="ok" id="ok50">OK</span>
+        <input type="text" id="nameInput50" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-50', 'nameInput50')">Gravar</button>
+      </div>
     </div>
     
-    <!-- Seção: DISPENSA -->
+    <!-- DISPENSA: Itens 51 a 59 -->
     <div class="section">
       <h2>DISPENSA</h2>
       <div class="item">
@@ -473,7 +579,7 @@
       </div>
     </div>
     
-    <!-- Seção: QUARTO -->
+    <!-- QUARTO: Itens 60 a 71 -->
     <div class="section">
       <h2>QUARTO</h2>
       <div class="item">
@@ -505,9 +611,9 @@
         <button class="name-btn" onclick="saveName('checkbox-63', 'nameInput63')">Gravar</button>
       </div>
       <div class="item">
-        <input type="checkbox" id="item64">
+        <input type="checkbox" id="item64" checked>
         <label for="item64">Edredons e colchas</label>
-        <span class="ok" id="ok64"></span>
+        <span class="ok" id="ok64">OK</span>
         <input type="text" id="nameInput64" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-64', 'nameInput64')">Gravar</button>
       </div>
@@ -526,23 +632,23 @@
         <button class="name-btn" onclick="saveName('checkbox-66', 'nameInput66')">Gravar</button>
       </div>
       <div class="item">
-        <input type="checkbox" id="item67">
+        <input type="checkbox" id="item67" checked>
         <label for="item67">Roupa de cama</label>
-        <span class="ok" id="ok67"></span>
+        <span class="ok" id="ok67">OK</span>
         <input type="text" id="nameInput67" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-67', 'nameInput67')">Gravar</button>
       </div>
       <div class="item">
-        <input type="checkbox" id="item68">
+        <input type="checkbox" id="item68" checked>
         <label for="item68">Toalhas de banho</label>
-        <span class="ok" id="ok68"></span>
+        <span class="ok" id="ok68">OK</span>
         <input type="text" id="nameInput68" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-68', 'nameInput68')">Gravar</button>
       </div>
       <div class="item">
-        <input type="checkbox" id="item69">
+        <input type="checkbox" id="item69" checked>
         <label for="item69">Travesseiros</label>
-        <span class="ok" id="ok69"></span>
+        <span class="ok" id="ok69">OK</span>
         <input type="text" id="nameInput69" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-69', 'nameInput69')">Gravar</button>
       </div>
@@ -554,15 +660,15 @@
         <button class="name-btn" onclick="saveName('checkbox-70', 'nameInput70')">Gravar</button>
       </div>
       <div class="item">
-        <input type="checkbox" id="item71">
+        <input type="checkbox" id="item71" checked>
         <label for="item71">Ventilador/Ventuinha</label>
-        <span class="ok" id="ok71"></span>
+        <span class="ok" id="ok71">OK</span>
         <input type="text" id="nameInput71" class="name-input" placeholder="escreva seu nome">
         <button class="name-btn" onclick="saveName('checkbox-71', 'nameInput71')">Gravar</button>
       </div>
     </div>
     
-    <!-- Seção: CASA DE BANHO -->
+    <!-- CASA DE BANHO: Itens 72 a 80 -->
     <div class="section">
       <h2>CASA DE BANHO</h2>
       <div class="item">
@@ -634,9 +740,8 @@
   <!-- Firebase: SDKs compat para Realtime Database -->
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
-  
   <script>
-    // Configuração do Firebase – certifique-se de que o databaseURL está correto.
+    // Configuração do Firebase – substitua o databaseURL conforme seu projeto
     const firebaseConfig = {
       apiKey: "AIzaSyBZVYqWk-km3junFvXQ1owOCneFTrrMRjI",
       authDomain: "casa-nova-rebeca.firebaseapp.com",
@@ -654,7 +759,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       const checkboxes = document.querySelectorAll('input[type="checkbox"]');
       
-      // Sincroniza os estados dos checkboxes com os dados do Firebase
+      // Sincroniza os estados dos checkboxes com o Firebase
       firebase.database().ref('checkboxes').on('value', (snapshot) => {
         const data = snapshot.val();
         checkboxes.forEach((checkbox, index) => {
@@ -670,7 +775,7 @@
         });
       });
       
-      // Sincroniza os campos de nome com os dados do Firebase
+      // Sincroniza os campos de nome com o Firebase
       firebase.database().ref('names').on('value', (snapshot) => {
         const namesData = snapshot.val();
         if (namesData) {
@@ -687,7 +792,7 @@
         }
       });
       
-      // Atualiza o Firebase quando um checkbox for alterado
+      // Atualiza o Firebase quando um checkbox é alterado
       checkboxes.forEach((checkbox, index) => {
         const key = 'checkbox-' + (index + 1);
         checkbox.addEventListener('change', function() {
