@@ -42,6 +42,7 @@
       display: flex;
       align-items: center;
       margin-bottom: 10px;
+      flex-wrap: wrap;
     }
     .item label {
       flex-grow: 1;
@@ -51,6 +52,15 @@
       margin-left: 10px;
       color: green;
       font-weight: bold;
+    }
+    .name-input {
+      margin-left: 10px;
+      padding: 4px;
+    }
+    .name-btn {
+      margin-left: 5px;
+      padding: 4px 8px;
+      cursor: pointer;
     }
     input[type="checkbox"] {
       width: 18px;
@@ -74,6 +84,9 @@
       .item label {
         font-size: 16px;
       }
+      .name-btn {
+        font-size: 0.8em;
+      }
     }
   </style>
 </head>
@@ -88,46 +101,64 @@
         <input type="checkbox" id="item1">
         <label for="item1">Sofá</label>
         <span class="ok" id="ok1"></span>
+        <input type="text" id="nameInput1" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-1', 'nameInput1')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item2">
         <label for="item2">Almofadas</label>
         <span class="ok" id="ok2"></span>
+        <input type="text" id="nameInput2" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-2', 'nameInput2')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item3">
         <label for="item3">TV (1.25cm largura)</label>
         <span class="ok" id="ok3"></span>
+        <input type="text" id="nameInput3" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-3', 'nameInput3')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item4">
         <label for="item4">Raque para TV</label>
         <span class="ok" id="ok4"></span>
+        <input type="text" id="nameInput4" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-4', 'nameInput4')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item5">
         <label for="item5">Mesa de suporte</label>
         <span class="ok" id="ok5"></span>
+        <input type="text" id="nameInput5" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-5', 'nameInput5')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item6">
         <label for="item6">Mesa de jantar de 4 cadeiras</label>
         <span class="ok" id="ok6"></span>
+        <input type="text" id="nameInput6" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-6', 'nameInput6')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item7">
         <label for="item7">Cortina da janela</label>
         <span class="ok" id="ok7"></span>
+        <input type="text" id="nameInput7" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-7', 'nameInput7')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item8">
         <label for="item8">Varal da cortina</label>
         <span class="ok" id="ok8"></span>
+        <input type="text" id="nameInput8" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-8', 'nameInput8')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item9">
         <label for="item9">Tapete</label>
         <span class="ok" id="ok9"></span>
+        <input type="text" id="nameInput9" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-9', 'nameInput9')">Gravar</button>
       </div>
     </div>
     
@@ -138,206 +169,218 @@
         <input type="checkbox" id="item10">
         <label for="item10">Acendedor de fogão</label>
         <span class="ok" id="ok10"></span>
+        <input type="text" id="nameInput10" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-10', 'nameInput10')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item11">
         <label for="item11">Air Fryer</label>
         <span class="ok" id="ok11"></span>
+        <input type="text" id="nameInput11" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-11', 'nameInput11')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item12">
         <label for="item12">Armário</label>
         <span class="ok" id="ok12"></span>
+        <input type="text" id="nameInput12" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-12', 'nameInput12')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item13">
         <label for="item13">Assadeira para forno</label>
         <span class="ok" id="ok13"></span>
+        <input type="text" id="nameInput13" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-13', 'nameInput13')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item14">
         <label for="item14">Cafeteira</label>
         <span class="ok" id="ok14"></span>
+        <input type="text" id="nameInput14" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-14', 'nameInput14')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item15">
         <label for="item15">Carrinho de mercado</label>
         <span class="ok" id="ok15"></span>
+        <input type="text" id="nameInput15" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-15', 'nameInput15')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item16">
         <label for="item16">Copos</label>
         <span class="ok" id="ok16"></span>
+        <input type="text" id="nameInput16" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-16', 'nameInput16')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item17">
         <label for="item17">Descanso de mesa</label>
         <span class="ok" id="ok17"></span>
+        <input type="text" id="nameInput17" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-17', 'nameInput17')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item18">
         <label for="item18">Escorredor de macarrão</label>
         <span class="ok" id="ok18"></span>
+        <input type="text" id="nameInput18" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-18', 'nameInput18')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item19">
         <label for="item19">Escorredor de prato</label>
         <span class="ok" id="ok19"></span>
+        <input type="text" id="nameInput19" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-19', 'nameInput19')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item20">
         <label for="item20">Espremedor de frutas</label>
         <span class="ok" id="ok20"></span>
+        <input type="text" id="nameInput20" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-20', 'nameInput20')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item21">
         <label for="item21">Estendal (varal)</label>
         <span class="ok" id="ok21"></span>
+        <input type="text" id="nameInput21" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-21', 'nameInput21')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item22">
         <label for="item22">Esquentador de água</label>
         <span class="ok" id="ok22"></span>
+        <input type="text" id="nameInput22" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-22', 'nameInput22')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item23">
         <label for="item23">Exaustor</label>
         <span class="ok" id="ok23"></span>
+        <input type="text" id="nameInput23" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-23', 'nameInput23')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item24">
         <label for="item24">Frigideira (2)</label>
         <span class="ok" id="ok24"></span>
+        <input type="text" id="nameInput24" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-24', 'nameInput24')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item25">
         <label for="item25">Frigorífico</label>
         <span class="ok" id="ok25"></span>
+        <input type="text" id="nameInput25" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-25', 'nameInput25')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item26">
         <label for="item26">Fruteira</label>
         <span class="ok" id="ok26"></span>
+        <input type="text" id="nameInput26" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-26', 'nameInput26')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item27">
         <label for="item27">Fogão</label>
         <span class="ok" id="ok27"></span>
+        <input type="text" id="nameInput27" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-27', 'nameInput27')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item28">
         <label for="item28">Garrafa de água de geladeira</label>
         <span class="ok" id="ok28"></span>
+        <input type="text" id="nameInput28" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-28', 'nameInput28')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item29">
         <label for="item29">Jarra de suco</label>
         <span class="ok" id="ok29"></span>
+        <input type="text" id="nameInput29" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-29', 'nameInput29')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item30">
         <label for="item30">Liquidificador</label>
         <span class="ok" id="ok30"></span>
+        <input type="text" id="nameInput30" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-30', 'nameInput30')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item31">
         <label for="item31">Lixeira de cozinha</label>
         <span class="ok" id="ok31"></span>
+        <input type="text" id="nameInput31" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-31', 'nameInput31')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item32">
         <label for="item32">Máquina de lavar roupa</label>
         <span class="ok" id="ok32"></span>
+        <input type="text" id="nameInput32" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-32', 'nameInput32')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item33">
         <label for="item33">Micro-ondas</label>
         <span class="ok" id="ok33"></span>
+        <input type="text" id="nameInput33" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-33', 'nameInput33')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item34">
         <label for="item34">Panelas</label>
         <span class="ok" id="ok34"></span>
+        <input type="text" id="nameInput34" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-34', 'nameInput34')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item35">
         <label for="item35">Panela de pressão</label>
         <span class="ok" id="ok35"></span>
+        <input type="text" id="nameInput35" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-35', 'nameInput35')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item36">
         <label for="item36">Panos de cozinha</label>
         <span class="ok" id="ok36"></span>
+        <input type="text" id="nameInput36" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-36', 'nameInput36')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item37">
         <label for="item37">Pratos</label>
         <span class="ok" id="ok37"></span>
+        <input type="text" id="nameInput37" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-37', 'nameInput37')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item38">
         <label for="item38">Rachette</label>
         <span class="ok" id="ok38"></span>
+        <input type="text" id="nameInput38" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-38', 'nameInput38')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item39">
         <label for="item39">Ralador</label>
         <span class="ok" id="ok39"></span>
+        <input type="text" id="nameInput39" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-39', 'nameInput39')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item40">
         <label for="item40">Tábua de corte</label>
         <span class="ok" id="ok40"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item41">
-        <label for="item41">Tábuas de descanso de mesa</label>
-        <span class="ok" id="ok41"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item42">
-        <label for="item42">Talheres de cozinha (colher grande, colher furada, concha, espátula de silicone, faca de corte)</label>
-        <span class="ok" id="ok42"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item43">
-        <label for="item43">Talheres de uso (garfo, faca, colher, colher de sobremesa)</label>
-        <span class="ok" id="ok43"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item44">
-        <label for="item44">Tapete de cozinha</label>
-        <span class="ok" id="ok44"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item45">
-        <label for="item45">Toalha de mesa</label>
-        <span class="ok" id="ok45"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item46">
-        <label for="item46">Varinha magica</label>
-        <span class="ok" id="ok46"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item47">
-        <label for="item47">Vasilhas plásticas para almoço do trabalho</label>
-        <span class="ok" id="ok47"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item48">
-        <label for="item48">Vasilha para condimentos</label>
-        <span class="ok" id="ok48"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item49">
-        <label for="item49">Xícaras grandes</label>
-        <span class="ok" id="ok49"></span>
-      </div>
-      <div class="item">
-        <input type="checkbox" id="item50">
-        <label for="item50">Xícaras pequenas</label>
-        <span class="ok" id="ok50"></span>
+        <input type="text" id="nameInput40" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-40', 'nameInput40')">Gravar</button>
       </div>
     </div>
     
@@ -348,46 +391,64 @@
         <input type="checkbox" id="item51">
         <label for="item51">Armários funcionais para guardar utensílios de limpeza e diversos</label>
         <span class="ok" id="ok51"></span>
+        <input type="text" id="nameInput51" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-51', 'nameInput51')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item52">
         <label for="item52">Aspirador de pó</label>
         <span class="ok" id="ok52"></span>
+        <input type="text" id="nameInput52" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-52', 'nameInput52')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item53">
         <label for="item53">Balde</label>
         <span class="ok" id="ok53"></span>
+        <input type="text" id="nameInput53" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-53', 'nameInput53')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item54">
         <label for="item54">Cesto de roupa suja</label>
         <span class="ok" id="ok54"></span>
+        <input type="text" id="nameInput54" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-54', 'nameInput54')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item55">
         <label for="item55">Esfregão/Mop</label>
         <span class="ok" id="ok55"></span>
+        <input type="text" id="nameInput55" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-55', 'nameInput55')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item56">
         <label for="item56">Ferro de passar roupa</label>
         <span class="ok" id="ok56"></span>
+        <input type="text" id="nameInput56" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-56', 'nameInput56')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item57">
         <label for="item57">Mesa de passar roupa</label>
         <span class="ok" id="ok57"></span>
+        <input type="text" id="nameInput57" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-57', 'nameInput57')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item58">
         <label for="item58">Pá de lixo</label>
         <span class="ok" id="ok58"></span>
+        <input type="text" id="nameInput58" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-58', 'nameInput58')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item59">
         <label for="item59">Vassoura</label>
         <span class="ok" id="ok59"></span>
+        <input type="text" id="nameInput59" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-59', 'nameInput59')">Gravar</button>
       </div>
     </div>
     
@@ -398,61 +459,85 @@
         <input type="checkbox" id="item60">
         <label for="item60">Armário</label>
         <span class="ok" id="ok60"></span>
+        <input type="text" id="nameInput60" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-60', 'nameInput60')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item61">
         <label for="item61">Cama de casal</label>
         <span class="ok" id="ok61"></span>
+        <input type="text" id="nameInput61" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-61', 'nameInput61')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item62">
         <label for="item62">Colchão de casal</label>
         <span class="ok" id="ok62"></span>
+        <input type="text" id="nameInput62" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-62', 'nameInput62')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item63">
         <label for="item63">Cortina da janela</label>
         <span class="ok" id="ok63"></span>
+        <input type="text" id="nameInput63" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-63', 'nameInput63')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item64">
         <label for="item64">Edredons e colchas</label>
         <span class="ok" id="ok64"></span>
+        <input type="text" id="nameInput64" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-64', 'nameInput64')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item65">
         <label for="item65">Espelho</label>
         <span class="ok" id="ok65"></span>
+        <input type="text" id="nameInput65" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-65', 'nameInput65')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item66">
         <label for="item66">Mesa de cabeceira</label>
         <span class="ok" id="ok66"></span>
+        <input type="text" id="nameInput66" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-66', 'nameInput66')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item67">
         <label for="item67">Roupa de cama</label>
         <span class="ok" id="ok67"></span>
+        <input type="text" id="nameInput67" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-67', 'nameInput67')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item68">
         <label for="item68">Toalhas de banho</label>
         <span class="ok" id="ok68"></span>
+        <input type="text" id="nameInput68" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-68', 'nameInput68')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item69">
         <label for="item69">Travesseiros</label>
         <span class="ok" id="ok69"></span>
+        <input type="text" id="nameInput69" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-69', 'nameInput69')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item70">
         <label for="item70">Varal da cortina</label>
         <span class="ok" id="ok70"></span>
+        <input type="text" id="nameInput70" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-70', 'nameInput70')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item71">
         <label for="item71">Ventilador/Ventuinha</label>
         <span class="ok" id="ok71"></span>
+        <input type="text" id="nameInput71" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-71', 'nameInput71')">Gravar</button>
       </div>
     </div>
     
@@ -463,103 +548,138 @@
         <input type="checkbox" id="item72">
         <label for="item72">Armário de banheiro</label>
         <span class="ok" id="ok72"></span>
+        <input type="text" id="nameInput72" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-72', 'nameInput72')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item73">
         <label for="item73">Cortina de banho</label>
         <span class="ok" id="ok73"></span>
+        <input type="text" id="nameInput73" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-73', 'nameInput73')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item74">
         <label for="item74">Espelho</label>
         <span class="ok" id="ok74"></span>
+        <input type="text" id="nameInput74" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-74', 'nameInput74')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item75">
         <label for="item75">Lixeira de banheiro</label>
         <span class="ok" id="ok75"></span>
+        <input type="text" id="nameInput75" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-75', 'nameInput75')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item76">
         <label for="item76">Porta sábado</label>
         <span class="ok" id="ok76"></span>
+        <input type="text" id="nameInput76" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-76', 'nameInput76')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item77">
         <label for="item77">Porta escova de dentes</label>
         <span class="ok" id="ok77"></span>
+        <input type="text" id="nameInput77" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-77', 'nameInput77')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item78">
         <label for="item78">Tapete</label>
         <span class="ok" id="ok78"></span>
+        <input type="text" id="nameInput78" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-78', 'nameInput78')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item79">
         <label for="item79">Toalha de mão</label>
         <span class="ok" id="ok79"></span>
+        <input type="text" id="nameInput79" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-79', 'nameInput79')">Gravar</button>
       </div>
       <div class="item">
         <input type="checkbox" id="item80">
         <label for="item80">Varal da cortina de banho</label>
         <span class="ok" id="ok80"></span>
+        <input type="text" id="nameInput80" class="name-input" placeholder="escreva seu nome">
+        <button class="name-btn" onclick="saveName('checkbox-80', 'nameInput80')">Gravar</button>
       </div>
     </div>
   </div>
   
-  <!-- Scripts do Firebase (versão compat para usar Realtime Database facilmente) -->
+  <!-- Firebase: SDKs compat para Realtime Database -->
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
-
+  
   <script>
-    // Cole aqui a configuração do seu projeto Firebase
-    // Incluímos o databaseURL (você precisa conferir no console do Firebase)
+    // Configure seu Firebase (substitua databaseURL pelo URL do seu Realtime Database)
     const firebaseConfig = {
       apiKey: "AIzaSyBZVYqWk-km3junFvXQ1owOCneFTrrMRjI",
       authDomain: "casa-nova-rebeca.firebaseapp.com",
-      databaseURL: "https://casa-nova-rebeca-default-rtdb.firebaseio.com/", /* Ex.: "https://casa-nova-rebeca-default-rtdb.firebaseio.com" */
+      databaseURL: "https://casa-nova-rebeca-default-rtdb.firebaseio.com",
       projectId: "casa-nova-rebeca",
       storageBucket: "casa-nova-rebeca.firebasestorage.app",
       messagingSenderId: "563938123370",
       appId: "1:563938123370:web:36c3d2c65aff5dacc5f413",
       measurementId: "G-0B64EW54RF"
     };
-
+    
     // Inicializa o Firebase
     firebase.initializeApp(firebaseConfig);
-
-    // Quando a página carrega, configuramos a sincronização
+    
     document.addEventListener('DOMContentLoaded', () => {
       const checkboxes = document.querySelectorAll('input[type="checkbox"]');
       
-      // Ao carregar, escutamos as mudanças do Realtime Database
+      // Atualiza a interface com os estados dos checkboxes salvos
       firebase.database().ref('checkboxes').on('value', (snapshot) => {
         const data = snapshot.val();
         checkboxes.forEach((checkbox, index) => {
           const key = 'checkbox-' + (index + 1);
           const okSpan = document.getElementById('ok' + (index + 1));
           if (data && data[key] !== undefined) {
-            // Aplica o estado vindo do banco
             checkbox.checked = data[key];
             okSpan.textContent = data[key] ? "OK" : "";
           } else {
-            // Se não existe ainda no banco, fica desmarcado (ou você pode deixar default)
             checkbox.checked = false;
             okSpan.textContent = "";
           }
         });
       });
-
-      // Toda vez que o usuário marcar/desmarcar um checkbox, atualizamos no Firebase
+      
+      // Atualiza os campos de nome com os dados salvos
+      firebase.database().ref('names').on('value', (snapshot) => {
+        const namesData = snapshot.val();
+        if (namesData) {
+          for (const key in namesData) {
+            const parts = key.split('-');
+            if(parts.length === 2) {
+              const index = parts[1];
+              const nameInput = document.getElementById('nameInput' + index);
+              if (nameInput) {
+                nameInput.value = namesData[key] || "";
+              }
+            }
+          }
+        }
+      });
+      
+      // Ao alterar um checkbox, atualiza no Firebase
       checkboxes.forEach((checkbox, index) => {
         const key = 'checkbox-' + (index + 1);
-        const okSpan = document.getElementById('ok' + (index + 1));
         checkbox.addEventListener('change', function() {
           firebase.database().ref('checkboxes/' + key).set(this.checked);
-          okSpan.textContent = this.checked ? "OK" : "";
         });
       });
     });
+    
+    // Função para salvar o nome do campo de texto
+    function saveName(key, inputId) {
+      const newName = document.getElementById(inputId).value;
+      firebase.database().ref('names/' + key).set(newName);
+    }
   </script>
 </body>
 </html>
