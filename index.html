@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>🏠 CASA NOVA REBECA</title>
-  <!-- Google Fonts para um toque mais delicado -->
+  <!-- Google Fonts para um toque delicado -->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Lato&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       background: #fff0f6;
@@ -55,6 +56,24 @@
       width: 18px;
       height: 18px;
       cursor: pointer;
+    }
+    /* Responsividade para smartphones */
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+      .container {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+      .section h2 {
+        font-size: 20px;
+      }
+      .item label {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
@@ -486,20 +505,24 @@
         <span class="ok" id="ok80"></span>
       </div>
     </div>
-    
   </div>
   
   <script>
-    // Seleciona todos os checkboxes e associa a exibição do "OK" ao marcar/desmarcar
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    checkboxes.forEach((checkbox, index) => {
-      const okSpan = document.getElementById('ok' + (index + 1));
-      // Verifica no carregamento se o checkbox já está marcado
-      if (checkbox.checked) {
-        okSpan.textContent = "OK";
-      }
-      checkbox.addEventListener('change', function() {
-        okSpan.textContent = this.checked ? "OK" : "";
+    // Ao carregar a página, recupera o estado de cada checkbox do localStorage
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach((checkbox, index) => {
+        const key = 'checkbox-' + (index + 1);
+        const savedState = localStorage.getItem(key);
+        if (savedState !== null) {
+          checkbox.checked = savedState === 'true';
+        }
+        const okSpan = document.getElementById('ok' + (index + 1));
+        okSpan.textContent = checkbox.checked ? "OK" : "";
+        checkbox.addEventListener('change', function() {
+          localStorage.setItem(key, this.checked);
+          okSpan.textContent = this.checked ? "OK" : "";
+        });
       });
     });
   </script>
