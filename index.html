@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Lato&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    /* Estilos Gerais */
     body {
       background: #fff0f6;
       font-family: 'Lato', sans-serif;
@@ -41,8 +42,10 @@
     .item {
       display: flex;
       align-items: center;
-      margin-bottom: 10px;
       flex-wrap: wrap;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
     }
     .item label {
       flex-grow: 1;
@@ -56,18 +59,21 @@
     .name-input {
       margin-left: 10px;
       padding: 4px;
+      font-size: 1em;
     }
     .name-btn {
       margin-left: 5px;
       padding: 4px 8px;
       cursor: pointer;
+      font-size: 1em;
     }
     input[type="checkbox"] {
       width: 18px;
       height: 18px;
       cursor: pointer;
     }
-    /* Responsividade para smartphones */
+    
+    /* Media Query para Smartphones */
     @media (max-width: 600px) {
       body {
         padding: 10px;
@@ -81,11 +87,26 @@
       .section h2 {
         font-size: 20px;
       }
+      .item {
+        flex-direction: column;
+        align-items: stretch;
+      }
       .item label {
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+      .ok {
+        margin: 5px 0;
+      }
+      .name-input {
+        width: 100%;
+        margin: 5px 0;
         font-size: 16px;
       }
       .name-btn {
-        font-size: 0.8em;
+        width: 100%;
+        margin: 5px 0;
+        font-size: 16px;
       }
     }
   </style>
@@ -615,7 +636,7 @@
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
   
   <script>
-    // Configure seu Firebase (substitua databaseURL pelo URL do seu Realtime Database)
+    // Configuração do Firebase – certifique-se de que o databaseURL está correto.
     const firebaseConfig = {
       apiKey: "AIzaSyBZVYqWk-km3junFvXQ1owOCneFTrrMRjI",
       authDomain: "casa-nova-rebeca.firebaseapp.com",
@@ -633,7 +654,7 @@
     document.addEventListener('DOMContentLoaded', () => {
       const checkboxes = document.querySelectorAll('input[type="checkbox"]');
       
-      // Atualiza a interface com os estados dos checkboxes salvos
+      // Sincroniza os estados dos checkboxes com os dados do Firebase
       firebase.database().ref('checkboxes').on('value', (snapshot) => {
         const data = snapshot.val();
         checkboxes.forEach((checkbox, index) => {
@@ -649,13 +670,13 @@
         });
       });
       
-      // Atualiza os campos de nome com os dados salvos
+      // Sincroniza os campos de nome com os dados do Firebase
       firebase.database().ref('names').on('value', (snapshot) => {
         const namesData = snapshot.val();
         if (namesData) {
           for (const key in namesData) {
             const parts = key.split('-');
-            if(parts.length === 2) {
+            if (parts.length === 2) {
               const index = parts[1];
               const nameInput = document.getElementById('nameInput' + index);
               if (nameInput) {
@@ -666,7 +687,7 @@
         }
       });
       
-      // Ao alterar um checkbox, atualiza no Firebase
+      // Atualiza o Firebase quando um checkbox for alterado
       checkboxes.forEach((checkbox, index) => {
         const key = 'checkbox-' + (index + 1);
         checkbox.addEventListener('change', function() {
@@ -675,7 +696,7 @@
       });
     });
     
-    // Função para salvar o nome do campo de texto
+    // Função para salvar o nome inserido
     function saveName(key, inputId) {
       const newName = document.getElementById(inputId).value;
       firebase.database().ref('names/' + key).set(newName);
